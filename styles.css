@@ -1,0 +1,83 @@
+/* إعدادات عامة */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #EAF6FF; /* خلفية باللون الأزرق الفاتح */
+    color: #333; /* لون النص الداكن */
+    display: flex;
+    justify-content: center; /* التوسيط الأفقي */
+    align-items: center; /* التوسيط العمودي */
+    height: 100vh; /* جعل ارتفاع الصفحة 100% من عرض الشاشة */
+    flex-direction: column; /* التأكد من أن المحتوى يكون عموديًا */
+    text-align: center; /* محاذاة النص إلى المركز */
+  }
+  
+  /* الحاوية الرئيسية لملفات الفريق */
+  .team-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* توزيع تلقائي للأعمدة */
+    gap: 20px;
+    padding: 40px;
+    justify-items: center;
+    max-width: 1200px; /* تحديد الحد الأقصى للعرض */
+    width: 100%;
+  }
+  
+  /* تصميم كل بطاقة فريق */
+  .team-member {
+    background-color: #ffffff; /* خلفية بيضاء للبطاقة */
+    padding: 25px;
+    border-radius: 15px; /* حواف دائرية */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* تأثير الظل حول البطاقة */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* إضافة تأثيرات التمرير */
+    width: 100%;
+    max-width: 350px; /* الحد الأقصى للعرض */
+  }
+  
+  .team-member:hover {
+    transform: scale(1.05); /* تأثير التكبير عند التمرير */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* زيادة الظل عند التمرير */
+  }
+  
+  /* صورة الملف الشخصي */
+  .profile-photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%; /* جعل الصورة دائرية */
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #00A9FF; /* إضافة حدود ملونة حول الصورة */
+  }
+  
+  /* اسم الشخص */
+  .name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2A3A66; /* لون نص غامق وجميل */
+    margin-bottom: 10px;
+    text-transform: capitalize; /* تحويل أول حرف من الاسم لحروف كبيرة */
+  }
+  
+  /* دور الشخص */
+  .role {
+    font-size: 16px;
+    color: #666; /* لون النص الرمادي الفاتح */
+    margin-bottom: 15px;
+    font-style: italic; /* إضافة تأثير مائل للدور */
+  }
+  
+  /* السيرة الذاتية */
+  .bio {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.5;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  /* إضافة تأثيرات عند التمرير فوق البطاقة */
+  .team-member:hover .bio {
+    color: #00A9FF; /* تغيير لون السيرة الذاتية عند التمرير */
+  }
+  
